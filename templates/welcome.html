@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Title</title>
+</head>
+<body>
+{% csrf_token %}
+Welcome {{e}}
+<br><br>
+<button type="button" onclick="location.href='{% url 'create' %}'">Create Report</button>
+<button type="button">Check Report</button>
+<button type="button" onclick="location.href='{% url 'check' %}'">Check Report</button>
+
+ 
+</body>
+</html>
